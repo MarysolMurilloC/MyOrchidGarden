@@ -1,0 +1,354 @@
+@import 'fonts';
+@import 'media-queries';
+
+//backgrounds
+
+p{
+    margin-bottom: 0px;
+}
+
+.bg-welcome{
+    background-image: url(../img/inicio2.jpg);
+    background-size: 113%;
+    background-position-x: -104px;
+    background-position-y: -270px;
+    height: 680px;
+    background-repeat: no-repeat;
+
+    @include respond-to($phone) {
+        background-size: 131%;
+        background-position-x: -61px;
+        background-position-y: 0px;
+        height: 1280px;
+        width: 722px;
+        background-repeat: no-repeat;
+    }
+    @include respond-to($tablet-landscape){
+        background-repeat: no-repeat;
+        background-position-x: -46px;
+        background-position-y: 0px;
+        height: 1000px;
+        width: 796px;
+    }
+}
+.logo{
+    @include respond-to($phone){
+        height: 70px;
+    }
+    @include respond-to($tablet-landscape){
+        height: 75px;
+    }
+}
+
+//barra superior
+.bg-black{
+    background-color: black;
+    background-size: 100%;
+    opacity: 80%;
+    height: 108px;
+}
+.pos-opt{
+    padding: 18px;
+    position: relative;
+}
+.btn-ham{
+    background-image: url(../img/list.png);
+    height: 4em;
+}
+
+//nav
+
+a{
+    font-size: 30px;
+    color: white;
+    font-family: 'CenturySchoolbook Italic';
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(12, 158, 56);
+}
+.bor-nav{
+    border-right-color: white;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+.phtog {
+    @include respond-to($phone){
+        background-color: black;
+    }
+    @include respond-to($tablet-landscape){
+        background-color: black;
+    }
+}
+
+
+//slogan header
+.pos-tien{
+    position: relative;
+    text-align: center;
+    margin-top: 22em;
+
+    @include respond-to($phone){
+        margin-top: 36em;
+    }
+    @include respond-to($tablet-landscape){
+        margin-top: 32em;
+    }
+}
+
+.btn-tien{
+    background-color: white;
+    font-family: 'CenturySchoolbook Italic';
+    border-color: black;
+    border-width: 3px;
+    font-size: 3em;
+}
+.btn-tien:hover{
+    background-color: black;
+    color: white;
+}
+
+.txt-tien{
+    font-family: 'CenturySchoolbook Regular';
+    color: white;
+    font-size: 21px;
+    text-shadow: 2px 1px #000000;
+
+    @include respond-to($phone){
+        font-size: 3em;
+        color: black;
+        font-family: "CenturySchoolbook Bold";
+        text-shadow: none;
+        margin-bottom: 1em;
+    }
+    @include respond-to($tablet-landscape){
+        color: black;
+        font-family: "CenturySchoolbook Bold";
+        text-shadow: none;
+        font-size: 2em;
+        margin: 2em;
+        margin-top: 0em;
+    }
+}
+
+.mar-tien{
+    margin: 4em;
+    margin-left: 9em;
+    margin-right: 9em;
+    @include respond-to($phone){
+        margin-left: 12em;
+        margin-right: 2em;
+    }
+}
+h2{
+    font-family: 'CenturySchoolbook BoldItalic';
+    color: black;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.icons{
+    height: 3em;
+    @include respond-to($phone){
+        height: 5em;
+        margin-top: 3em;
+    }
+    @include respond-to($tablet-landscape){
+        margin-top: 2em;
+        margin-right: 14em;
+    }
+}
+
+//muestra tienda
+.tam-img{
+    height: 419px;
+    width: 351px;
+    margin-bottom: 2em;
+}
+.col-adj{
+    text-align: center;
+    flex: 1 0 0%;
+    @include respond-to($phone){
+        margin-bottom: 4em;
+    }
+    @include respond-to($tablet-landscape){
+        margin-bottom: 4em;
+        margin-left: 4em;
+    }
+}
+.tit-pro{
+    font-family: 'CenturySchoolbook Bold';
+    color: black;
+    font-size: 1.8em;
+    @include respond-to($phone){
+        font-size: 2.4em;
+    }
+}
+
+//carrousel
+.bg-car{
+    background-color: #5A5A5A;
+    height: 945px;
+    display: block;
+    @include respond-to($phone) {
+        height: 982px;
+        width: 722px;
+    }
+    @include respond-to($tablet-landscape){
+        width: 796px;
+    }
+}
+.mar-car{
+    padding-top: 4em;
+
+        margin: 4em;
+        margin-left: 9em;
+        margin-right: 9em;
+        @include respond-to($phone){
+            margin: 0em;
+        }
+        @include respond-to($tablet-landscape){
+            margin: 0em;
+        }
+        
+}
+.car-propo{
+    width: 1252px;
+    height: 670px;
+    left: 5em;
+    @include respond-to($phone) {
+        width: 520px;
+        height: 580px;
+        left: 7em;
+    }
+    @include respond-to($tablet-landscape){
+        width: 577px;
+        height: 565px;
+        left: 7em;
+    }
+}
+.phCar{
+    @include respond-to($phone){
+        height: 355px;
+    }
+}
+.bg-det{
+    background-color: white;
+    opacity: 75%;
+    width: 1252px;
+    align-items: center;
+    @include respond-to($phone){
+        width: 520px;
+    }
+    @include respond-to($tablet-landscape){
+        width: 577px;
+    }
+}
+.txt-det{
+    margin-left: 3em;
+    font-family: 'Candara LightItalic';
+    font-size: 20px;
+    text-align: left;
+    color: black;
+}
+.carousel-caption{
+    bottom: -0.75rem;
+    left: 0%;
+    @include respond-to($phone){
+        bottom: 6rem;
+    }
+    @include respond-to($tablet-landscape){
+        bottom: 2.5rem;
+    }
+}
+.txt-h3{
+    color: white;
+}
+
+
+
+
+//pie pagina
+li{
+    list-style: none;
+}
+.bg-foot{
+    background-color: #1D1616;
+    height: auto;
+    @include respond-to($phone){
+        width: 722px;
+    }
+    @include respond-to($tablet-landscape){
+        width: 796px;
+    }
+}
+.bg-der{
+    background-color: #0D0A0A;
+    height: 2.7em;
+    padding-top: 0.5em;
+}
+.mar-foot{
+    margin: 3em;
+    margin-left: 32em;
+    @include respond-to($phone){
+        margin: 2em;
+        margin-top: 3em;
+        margin-left: 6em;
+    }
+    @include respond-to($tablet-landscape){
+        margin: 2em;
+        margin-left: 8em;
+        margin-right: 0em;
+    }
+}
+.mar-foot2{
+    margin: 2em;
+    margin-right: 26em;
+    @include respond-to($phone){
+        margin: 3em;
+    }
+    @include respond-to($tablet-landscape){
+        margin: 2em;
+        margin-left: 0em;
+    }
+}
+.row{
+    width: 100%;
+}
+
+h3{
+    font-family: 'CenturySchoolbook Bold';
+    font-size: 27px;
+    color: white;
+}
+.txt-contacto{
+    font-family: 'Candara LightItalic';
+    font-size: 16px;
+    color: white;
+}
+.txt-related{
+    font-family: 'Candara LightItalic';
+    font-size: 20px;
+    color: white;
+}
+.txt-reti{
+    font-size: 16px;
+}
+.txt-derechos{
+    font-family: 'Candara LightItalic';
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.redes-blan{
+    color: white;
+}
+
+////////////////////////////////////////////////////ç
+.h2-b{
+    color: white;
+}
+.qs-bor{
+    border-bottom-width: 2px;
+    color: #1D1616;
+}
