@@ -1,0 +1,464 @@
+/*
+Theme Name: My Orchid Garden
+Theme URI: url donde se puede encontrar más detalles del tema
+Author: Marysol Murillo Cascante
+Author URI: url del autor(es)
+Description: Tienda de venta de orquídeas, accesorios y suplementos para estas.
+Tags: orchid, garden, shop
+Version: 1.0
+Requires at least: 5.0 - versión de WP
+Tested up to: 5.4 - versión de WP
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@font-face {
+  font-family: "CenturySchoolbook BoldItalic";
+  src: url("../fonts/CenturySchoolbookBOLDITALIC.woff") format("woff");
+  src: url("../fonts/CenturySchoolbookBOLDITALIC.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CenturySchoolbook Italic";
+  src: url("../fonts/CenturySchoolbookKursiv.woff") format("woff");
+  src: url("../fonts/CenturySchoolbookKursiv.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CenturySchoolbook Regular";
+  src: url("../fonts/CenturySchoolbookRegularfont.woff") format("woff");
+  src: url("../fonts/CenturySchoolbookRegularfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CenturySchoolbook Bold";
+  src: url("../fonts/CenturySchoolbookBold.woff") format("woff");
+  src: url("../fonts/CenturySchoolbookBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Candara LightItalic";
+  src: url("../fonts/candaralightitalic.woff") format("woff");
+  src: url("../fonts/candaralightitalic.ttf") format("truetype");
+}
+p {
+  margin-bottom: 0px;
+}
+
+.bg-welcome {
+  background-image: url(../img/inicio2.jpg);
+  background-size: 113%;
+  background-position-x: -104px;
+  background-position-y: -270px;
+  height: 680px;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 480px) {
+  .bg-welcome {
+    background-size: 131%;
+    background-position-x: -61px;
+    background-position-y: 0px;
+    height: 1280px;
+    width: 722px;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .bg-welcome {
+    background-repeat: no-repeat;
+    background-position-x: -46px;
+    background-position-y: 0px;
+    height: 1000px;
+    width: 796px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    height: 70px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .logo {
+    height: 75px;
+  }
+}
+
+.bg-black {
+  background-color: black;
+  background-size: 100%;
+  opacity: 80%;
+  height: 108px;
+}
+
+.pos-opt {
+  padding: 18px;
+  position: relative;
+}
+
+.btn-ham {
+  background-image: url(../img/list.png);
+  height: 4em;
+}
+
+a {
+  font-size: 30px;
+  color: white;
+  font-family: "CenturySchoolbook Italic";
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c9e38;
+}
+
+.bor-nav {
+  border-right-color: white;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+@media only screen and (max-width: 480px) {
+  .phtog {
+    background-color: black;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .phtog {
+    background-color: black;
+  }
+}
+
+.pos-tien {
+  position: relative;
+  text-align: center;
+  margin-top: 22em;
+}
+@media only screen and (max-width: 480px) {
+  .pos-tien {
+    margin-top: 36em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .pos-tien {
+    margin-top: 32em;
+  }
+}
+
+.btn-tien {
+  background-color: white;
+  font-family: "CenturySchoolbook Italic";
+  border-color: black;
+  border-width: 3px;
+  font-size: 3em;
+}
+
+.btn-tien:hover {
+  background-color: black;
+  color: white;
+}
+
+.txt-tien {
+  font-family: "CenturySchoolbook Regular";
+  color: white;
+  font-size: 21px;
+  text-shadow: 2px 1px #000000;
+}
+@media only screen and (max-width: 480px) {
+  .txt-tien {
+    font-size: 3em;
+    color: black;
+    font-family: "CenturySchoolbook Bold";
+    text-shadow: none;
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .txt-tien {
+    color: black;
+    font-family: "CenturySchoolbook Bold";
+    text-shadow: none;
+    font-size: 2em;
+    margin: 2em;
+    margin-top: 0em;
+  }
+}
+
+.mar-tien {
+  margin: 4em;
+  margin-left: 9em;
+  margin-right: 9em;
+}
+@media only screen and (max-width: 480px) {
+  .mar-tien {
+    margin-left: 12em;
+    margin-right: 2em;
+  }
+}
+
+h2 {
+  font-family: "CenturySchoolbook BoldItalic";
+  color: black;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.icons {
+  height: 3em;
+}
+@media only screen and (max-width: 480px) {
+  .icons {
+    height: 5em;
+    margin-top: 3em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .icons {
+    margin-top: 2em;
+    margin-right: 14em;
+  }
+}
+
+.tam-img {
+  height: 419px;
+  width: 351px;
+  margin-bottom: 2em;
+}
+
+.col-adj {
+  text-align: center;
+  flex: 1 0 0%;
+}
+@media only screen and (max-width: 480px) {
+  .col-adj {
+    margin-bottom: 4em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .col-adj {
+    margin-bottom: 4em;
+    margin-left: 4em;
+  }
+}
+
+.tit-pro {
+  font-family: "CenturySchoolbook Bold";
+  color: black;
+  font-size: 1.8em;
+}
+@media only screen and (max-width: 480px) {
+  .tit-pro {
+    font-size: 2.4em;
+  }
+}
+
+.bg-car {
+  background-color: #5A5A5A;
+  height: 945px;
+  display: block;
+}
+@media only screen and (max-width: 480px) {
+  .bg-car {
+    height: 982px;
+    width: 722px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .bg-car {
+    width: 796px;
+  }
+}
+
+.mar-car {
+  padding-top: 4em;
+  margin: 4em;
+  margin-left: 9em;
+  margin-right: 9em;
+}
+@media only screen and (max-width: 480px) {
+  .mar-car {
+    margin: 0em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .mar-car {
+    margin: 0em;
+  }
+}
+
+.car-propo {
+  width: 1252px;
+  height: 670px;
+  left: 5em;
+}
+@media only screen and (max-width: 480px) {
+  .car-propo {
+    width: 520px;
+    height: 580px;
+    left: 7em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .car-propo {
+    width: 577px;
+    height: 565px;
+    left: 7em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .phCar {
+    height: 355px;
+  }
+}
+
+.bg-det {
+  background-color: white;
+  opacity: 75%;
+  width: 1252px;
+  align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .bg-det {
+    width: 520px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .bg-det {
+    width: 577px;
+  }
+}
+
+.txt-det {
+  margin-left: 3em;
+  font-family: "Candara LightItalic";
+  font-size: 20px;
+  text-align: left;
+  color: black;
+}
+
+.carousel-caption {
+  bottom: -0.75rem;
+  left: 0%;
+}
+@media only screen and (max-width: 480px) {
+  .carousel-caption {
+    bottom: 6rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .carousel-caption {
+    bottom: 2.5rem;
+  }
+}
+
+.txt-h3 {
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.bg-foot {
+  background-color: #1D1616;
+  height: auto;
+}
+@media only screen and (max-width: 480px) {
+  .bg-foot {
+    width: 722px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .bg-foot {
+    width: 796px;
+  }
+}
+
+.bg-der {
+  background-color: #0D0A0A;
+  height: 2.7em;
+  padding-top: 0.5em;
+}
+
+.mar-foot {
+  margin: 3em;
+  margin-left: 32em;
+}
+@media only screen and (max-width: 480px) {
+  .mar-foot {
+    margin: 2em;
+    margin-top: 3em;
+    margin-left: 6em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .mar-foot {
+    margin: 2em;
+    margin-left: 8em;
+    margin-right: 0em;
+  }
+}
+
+.mar-foot2 {
+  margin: 2em;
+  margin-right: 26em;
+}
+@media only screen and (max-width: 480px) {
+  .mar-foot2 {
+    margin: 3em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .mar-foot2 {
+    margin: 2em;
+    margin-left: 0em;
+  }
+}
+
+.row {
+  width: 100%;
+}
+
+h3 {
+  font-family: "CenturySchoolbook Bold";
+  font-size: 27px;
+  color: white;
+}
+
+.txt-contacto {
+  font-family: "Candara LightItalic";
+  font-size: 16px;
+  color: white;
+}
+
+.txt-related {
+  font-family: "Candara LightItalic";
+  font-size: 20px;
+  color: white;
+}
+
+.txt-reti {
+  font-size: 16px;
+}
+
+.txt-derechos {
+  font-family: "Candara LightItalic";
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.redes-blan {
+  color: white;
+}
+
+.h2-b {
+  color: white;
+}
+
+.qs-bor {
+  border-bottom-width: 2px;
+  color: #1D1616;
+}
