@@ -187,11 +187,11 @@ a:hover {
 }
 @media only screen and (max-width: 480px) {
   .txt-tien {
-    font-size: 3em;
+    font-size: 1.5em;
     color: black;
     font-family: "CenturySchoolbook Bold";
     text-shadow: none;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -213,9 +213,9 @@ a:hover {
 }
 @media only screen and (max-width: 480px) {
   .mar-tien {
-    margin-left: 12em;
+    margin-left: 3em;
     margin-right: 3em;
-    margin-bottom: 2em;
+    margin: 2em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -260,7 +260,7 @@ h2 {
 }
 @media only screen and (max-width: 480px) {
   .tam-img {
-    height: 310;
+    height: 300px;
   }
 }
 
@@ -572,6 +572,7 @@ h3 {
 @media only screen and (max-width: 480px) {
   .margin-qs {
     margin-left: 2em;
+    margin-right: 2em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {

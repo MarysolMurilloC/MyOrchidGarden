@@ -125,11 +125,11 @@ a:hover{
     text-shadow: 2px 1px #000000;
 
     @include respond-to($phone){
-        font-size: 3em;
+        font-size: 1.5em;
         color: black;
         font-family: "CenturySchoolbook Bold";
         text-shadow: none;
-        margin-bottom: 1em;
+        margin-bottom: 0em;
     }
     @include respond-to($tablet-landscape){
         color: black;
@@ -147,9 +147,9 @@ a:hover{
     margin-left: 12em;
     margin-right: 12em;
     @include respond-to($phone){
-        margin-left: 12em;
+        margin-left: 3em;
         margin-right: 3em;
-        margin-bottom: 2em;
+        margin: 2em;
     }
     @include respond-to($tablet-landscape){
         margin-left: 7em;
@@ -183,7 +183,7 @@ h2{
     height: 419px;
     margin-bottom: 2em;
     @include respond-to($phone){
-        height: 310;
+        height: 300px;
     }
 }
 .col-adj{
@@ -428,6 +428,7 @@ h3{
     margin-right: 17em;
     @include respond-to($phone){
         margin-left: 2em;
+        margin-right: 2em;
     }
     @include respond-to($tablet-landscape){
         margin-left: 6em;
