@@ -37,16 +37,16 @@ p {
   background-size: 113%;
   background-position-x: -104px;
   background-position-y: -270px;
-  height: 716px;
+  height: 800px;
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 480px) {
   .bg-welcome {
     background-size: 131%;
-    background-position-x: -61px;
+    background-position-x: -107px;
     background-position-y: 0px;
-    height: 1280px;
-    width: 722px;
+    height: 625px;
+    width: 375px;
     background-repeat: no-repeat;
   }
 }
@@ -62,7 +62,7 @@ p {
 
 @media only screen and (max-width: 480px) {
   .logo {
-    height: 70px;
+    height: 55px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -123,11 +123,11 @@ a:hover {
 .pos-tien {
   position: relative;
   text-align: center;
-  padding-top: 30em;
+  padding-top: 36em;
 }
 @media only screen and (max-width: 480px) {
   .pos-tien {
-    padding-top: 36em;
+    padding-top: 22em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -142,6 +142,17 @@ a:hover {
   border-color: black;
   border-width: 3px;
   font-size: 3em;
+}
+@media only screen and (max-width: 480px) {
+  .btn-tien {
+    font-size: 1.5em;
+    border-width: 2px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .btn-tien {
+    font-size: 2em;
+  }
 }
 
 .btn-tien:hover {
@@ -171,19 +182,27 @@ a:hover {
     text-shadow: none;
     font-size: 2em;
     margin: 2em;
-    margin-top: 0em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 }
 
 .mar-tien {
-  margin: 4em;
-  margin-left: 9em;
-  margin-right: 9em;
+  margin: 10em;
+  margin-left: 12em;
+  margin-right: 12em;
 }
 @media only screen and (max-width: 480px) {
   .mar-tien {
     margin-left: 12em;
-    margin-right: 2em;
+    margin-right: 3em;
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .mar-tien {
+    margin-left: 7em;
+    margin-right: 7em;
   }
 }
 
@@ -194,14 +213,19 @@ h2 {
   text-align: center;
   margin-bottom: 1em;
 }
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 2.3em;
+  }
+}
 
 .icons {
   height: 3em;
 }
 @media only screen and (max-width: 480px) {
   .icons {
-    height: 5em;
-    margin-top: 3em;
+    height: 2em;
+    margin-top: 1em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -213,8 +237,12 @@ h2 {
 
 .tam-img {
   height: 419px;
-  width: 351px;
   margin-bottom: 2em;
+}
+@media only screen and (max-width: 480px) {
+  .tam-img {
+    height: 310;
+  }
 }
 
 .col-adj {
@@ -240,7 +268,7 @@ h2 {
 }
 @media only screen and (max-width: 480px) {
   .tit-pro {
-    font-size: 2.4em;
+    font-size: 1.5em;
   }
 }
 
@@ -251,8 +279,8 @@ h2 {
 }
 @media only screen and (max-width: 480px) {
   .bg-car {
-    height: 982px;
-    width: 722px;
+    height: 555px;
+    width: 375px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -281,29 +309,29 @@ h2 {
 .car-propo {
   width: 1252px;
   height: 670px;
-  left: 5em;
+  left: 10em;
 }
 @media only screen and (max-width: 480px) {
   .car-propo {
-    width: 520px;
-    height: 580px;
-    left: 7em;
+    width: 282px;
+    height: 395px;
+    left: 3em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .car-propo {
     width: 577px;
     height: 565px;
-    left: 7em;
+    left: 6em;
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .phCar {
-    height: 355px;
-  }
-}
-
+/*
+.phCar{
+    @include respond-to($phone){
+        height: 355px;
+    }
+}*/
 .bg-det {
   background-color: white;
   opacity: 75%;
@@ -312,7 +340,7 @@ h2 {
 }
 @media only screen and (max-width: 480px) {
   .bg-det {
-    width: 520px;
+    width: 282px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -327,6 +355,12 @@ h2 {
   font-size: 20px;
   text-align: left;
   color: black;
+}
+@media only screen and (max-width: 480px) {
+  .txt-det {
+    margin-left: 1em;
+    font-size: 15px;
+  }
 }
 
 .carousel-caption {
@@ -358,7 +392,7 @@ li {
 }
 @media only screen and (max-width: 480px) {
   .bg-foot {
-    width: 722px;
+    width: 375px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -369,7 +403,7 @@ li {
 
 .bg-der {
   background-color: #0D0A0A;
-  height: 2.7em;
+  height: auto;
   padding-top: 0.5em;
 }
 
@@ -440,6 +474,12 @@ h3 {
   color: white;
   text-align: center;
 }
+@media only screen and (max-width: 480px) {
+  .txt-derechos {
+    font-size: 12px;
+    padding-bottom: 7px;
+  }
+}
 
 .redes-blan {
   color: white;
@@ -448,16 +488,30 @@ h3 {
 .h2-b {
   color: white;
 }
+@media only screen and (max-width: 480px) {
+  .h2-b {
+    font-size: 3em;
+  }
+}
 
 .qs-bor {
-  margin-bottom: 3em;
-  padding-bottom: 2em;
-  border-bottom: 2px solid #1D1616;
+  margin-bottom: 9em;
+  padding-bottom: 4em;
+  border-bottom: 4px solid #1D1616;
 }
 
 .bg-about {
   background-color: #5A5A5A;
-  padding-bottom: 1em;
+  padding-bottom: 4em;
+  margin-top: 20em;
+  padding-top: 17em;
+}
+@media only screen and (max-width: 480px) {
+  .bg-about {
+    margin-top: 11em;
+    padding-top: 6em;
+    padding-bottom: 1em;
+  }
 }
 
 .txt-about {
@@ -466,9 +520,44 @@ h3 {
   font-size: 1.5em;
   text-align: center;
 }
+@media only screen and (max-width: 480px) {
+  .txt-about {
+    font-size: 1em;
+  }
+}
 
 .phguar {
   height: 510px;
-  margin-left: 30em;
-  margin-top: 5em;
+  margin-left: 35em;
+  margin-top: 4em;
+  position: absolute;
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .phguar {
+    height: 450px;
+    margin-left: 3.5em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .phguar {
+    height: 217px;
+    margin-left: 2em;
+  }
+}
+
+.margin-qs {
+  margin: 4em;
+  margin-left: 17em;
+  margin-right: 17em;
+}
+@media only screen and (max-width: 480px) {
+  .margin-qs {
+    margin-left: 2em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .margin-qs {
+    margin-left: 6em;
+    margin-right: 6em;
+  }
 }

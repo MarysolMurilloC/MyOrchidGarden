@@ -2,13 +2,13 @@
 
     <img class="phguar" src="<?php echo get_template_directory_uri()."/img/guaria.jpg"; ?>" alt="orquidea">
     <div class="bg-about">
-    <div class="mar-tien">
+    <div class="margin-qs">
     <div class="qs-bor">
         <h2 class="h2-b">Nosotros</h2>
-        <p class="txt-about">Somos una pequeña tienda independiente dedicada a la venta y distribución de orquídeas, <br>
-            suplementos para estas y accesorios como macetas  y decoraciones.<br>
-            Nuestro catálogo de orquídeas cuenta con una amplia variedad de todo tipo de tamaños, estas<br>
-            son cultivadas cuidadosamente de la manera más natural posible, obteniendo como resultado <br>
+        <p class="txt-about">Somos una pequeña tienda independiente dedicada a la venta y distribución de orquídeas,
+            suplementos para estas y accesorios como macetas  y decoraciones.
+            Nuestro catálogo de orquídeas cuenta con una amplia variedad de todo tipo de tamaños, estas
+            son cultivadas cuidadosamente de la manera más natural posible, obteniendo como resultado
             radiantes flores para el disfrute de nuestros clientes.</p>
     </div>
 
