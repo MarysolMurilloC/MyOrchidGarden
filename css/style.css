@@ -23,16 +23,21 @@
   src: url("../fonts/candaralightitalic.woff") format("woff");
   src: url("../fonts/candaralightitalic.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Candara Regular";
+  src: url("../fonts/CANDARA.woff") format("woff");
+  src: url("../fonts/CANDARA.TTF") format("truetype");
+}
 p {
   margin-bottom: 0px;
 }
 
 .bg-welcome {
-  background-image: url(../img/inicio2.jpg);
+  background-image: url(./img/inicio2.jpg);
   background-size: 113%;
   background-position-x: -104px;
   background-position-y: -270px;
-  height: 680px;
+  height: 716px;
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 480px) {
@@ -79,7 +84,7 @@ p {
 }
 
 .btn-ham {
-  background-image: url(../img/list.png);
+  background-image: url(./img/list.png);
   height: 4em;
 }
 
@@ -111,19 +116,23 @@ a:hover {
   }
 }
 
+.navbar-nav {
+  padding-left: 40em;
+}
+
 .pos-tien {
   position: relative;
   text-align: center;
-  margin-top: 22em;
+  padding-top: 30em;
 }
 @media only screen and (max-width: 480px) {
   .pos-tien {
-    margin-top: 36em;
+    padding-top: 36em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .pos-tien {
-    margin-top: 32em;
+    padding-top: 38em;
   }
 }
 
@@ -441,6 +450,25 @@ h3 {
 }
 
 .qs-bor {
-  border-bottom-width: 2px;
-  color: #1D1616;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+  border-bottom: 2px solid #1D1616;
+}
+
+.bg-about {
+  background-color: #5A5A5A;
+  padding-bottom: 1em;
+}
+
+.txt-about {
+  color: white;
+  font-family: "Candara Regular";
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.phguar {
+  height: 510px;
+  margin-left: 30em;
+  margin-top: 5em;
 }

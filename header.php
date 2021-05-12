@@ -11,7 +11,7 @@
 
   <div class="container-fluid ps-0 pe-0">
 
-    <header class="bg-welcome">
+    <header>
       <nav class="navbar navbar-expand-lg  bg-black">
         <div class="container-fluid ms-2 me-1">
           <a class="navbar-brand" href="#"><img class="logo" src="<?php echo get_template_directory_uri()."/img/mog.png"; ?>" alt="MOG"></a>
@@ -36,30 +36,6 @@
           ?>
 
   
-          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent"><!--barrita desplegable dispositivo movil-->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-2">
-              
-              <li class="nav-item dropdown bor-nav phtog p-2">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tienda
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Orquídeas</a></li>
-                    <li><a class="dropdown-item" href="#">Suplementos</a></li>
-                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                  </ul>
-              </li>
-  
-              <li class="nav-item bor-nav phtog p-2">
-                <a class="nav-link active" aria-current="page" href="#">Quiénes Somos</a>
-              </li>
-              
-              <li class="nav-item phtog p-2">
-                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-              </li>
-              
-            </ul>
-          </div>
         </div>
       </nav>
     
