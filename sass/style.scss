@@ -180,21 +180,38 @@ h2{
 
 //muestra tienda
 .tam-img{
-    height: 419px;
+    height: 428px;
+    width: 394px;
     margin-bottom: 2em;
     @include respond-to($phone){
         height: 300px;
+        width: 295px;
+    }
+    @include respond-to($tablet-landscape){
+        width: 366px;
+    }
+}
+.card{
+    border: none;
+}
+.card-body{
+    @include respond-to($phone){
+        padding: 0em;
     }
 }
 .col-adj{
     text-align: center;
     flex: 1 0 0%;
+    align-items: center;
     @include respond-to($phone){
         margin-bottom: 4em;
+        margin-right: 9em;
+        margin-left: 9.5em;
     }
     @include respond-to($tablet-landscape){
         margin-bottom: 4em;
-        margin-left: 4em;
+        margin-left: 10em;
+        margin-right: 10em;
     }
 }
 .tit-pro{
@@ -436,3 +453,8 @@ h3{
     }
 }
 
+//pagina contacto//
+.bg-cont{
+    background-image: url(./img/dendrobiun.jpg);
+    background-repeat: no-repeat;
+}

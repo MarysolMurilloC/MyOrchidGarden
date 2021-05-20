@@ -255,28 +255,49 @@ h2 {
 }
 
 .tam-img {
-  height: 419px;
+  height: 428px;
+  width: 394px;
   margin-bottom: 2em;
 }
 @media only screen and (max-width: 480px) {
   .tam-img {
     height: 300px;
+    width: 295px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .tam-img {
+    width: 366px;
+  }
+}
+
+.card {
+  border: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .card-body {
+    padding: 0em;
   }
 }
 
 .col-adj {
   text-align: center;
   flex: 1 0 0%;
+  align-items: center;
 }
 @media only screen and (max-width: 480px) {
   .col-adj {
     margin-bottom: 4em;
+    margin-right: 9em;
+    margin-left: 9.5em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .col-adj {
     margin-bottom: 4em;
-    margin-left: 4em;
+    margin-left: 10em;
+    margin-right: 10em;
   }
 }
 
@@ -580,4 +601,9 @@ h3 {
     margin-left: 6em;
     margin-right: 6em;
   }
+}
+
+.bg-cont {
+  background-image: url(./img/dendrobiun.jpg);
+  background-repeat: no-repeat;
 }

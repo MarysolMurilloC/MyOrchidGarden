@@ -31,22 +31,29 @@
   
       <div class="mar-tien">
           <h2>Nuestros Productos</h2>
+
           <div class="row">
-              <div class="col-adj">
-                  <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/tien1.JPG"; ?>" alt="">
-                  <a class="tit-pro" href="#">Orquídeas</a>
-                  
-              </div>
-              <div class="col-adj">
-                  <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/jcr_content.png"; ?>" alt="">
-                  <a class="tit-pro" href="#">Suplementos</a>
-  
-              </div>
-              <div class="col-adj">
-                  <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/maceta.jpg"; ?>" alt="">
-                  <a class="tit-pro" href="#">Accesorios</a>
-  
-              </div>
+          <div class="card col-adj">
+            <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/tien1.JPG"; ?>" alt=""> 
+            <div class="card-body">
+            <a class="tit-pro" href="#">Orquídeas</a>
+            </div>
+          </div>
+
+          <div class="card col-adj">
+          <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/jcr_content.png"; ?>" alt="">
+            <div class="card-body">
+            <a class="tit-pro" href="#">Suplementos</a>
+            </div>
+          </div>
+
+          <div class="card col-adj">
+          <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/maceta.jpg"; ?>" alt="">
+            <div class="card-body">
+            <a class="tit-pro" href="#">Accesorios</a>
+            </div>
+          </div>
+            
           </div>
       </div><!--fin partes tienda-->
   
