@@ -606,4 +606,57 @@ h3 {
 .bg-cont {
   background-image: url(./img/dendrobiun.jpg);
   background-repeat: no-repeat;
+  height: 70em;
+  padding-top: 8%;
+}
+@media only screen and (max-width: 480px) {
+  .bg-cont {
+    height: 47em;
+  }
+}
+
+.bg-contform {
+  background-color: #fff;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding: 3em;
+}
+@media only screen and (max-width: 480px) {
+  .bg-contform {
+    padding: 1em;
+  }
+}
+
+label {
+  font-family: "CenturySchoolbook Bold";
+  font-size: 1.3em;
+}
+
+.btn-cont {
+  background-color: white;
+  font-family: "CenturySchoolbook Bold";
+  border-color: black;
+  border-width: 3px;
+  border-radius: 40px;
+  font-size: 2.3em;
+  margin-top: 0.8em;
+  width: 6em;
+  margin-left: 40%;
+}
+@media only screen and (max-width: 480px) {
+  .btn-cont {
+    font-size: 1.5em;
+    border-width: 2px;
+    margin-left: 24%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .btn-cont {
+    font-size: 2em;
+  }
+}
+
+.btn-cont:hover {
+  background-color: black;
+  color: white;
 }
