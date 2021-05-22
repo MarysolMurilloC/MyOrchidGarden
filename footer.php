@@ -28,18 +28,18 @@
             <h3>Contenido relacionado</h3>
             
             <nav>
-              <ul>
-                  <li><a  class="txt-related" href="#">Inicio</a></li>
-                  <li><a  class="txt-related" href="#">Quiénes Somos</a></li>
-                  <li><p class="txt-related">Tienda</p></li>
+            <ul>
+                  <li><a  class="txt-related" href="inicio">Inicio</a></li>
+                  <li><a  class="txt-related" href="quienes-somos">Quiénes Somos</a></li>
+                  <li><a class="txt-related" href="tienda">Tienda</a></li>
                   <div class="ms-4">
-                    <li><a  class="txt-related txt-reti" href="#">Orquídeas	</a></li>
-                    <li><a  class="txt-related txt-reti" href="#">Suplementos</a></li>
-                    <li><a  class="txt-related txt-reti" href="#">Accesorios</a></li>
+                    <li><a  class="txt-related txt-reti" href="orquideas">Orquídeas	</a></li>
+                    <li><a  class="txt-related txt-reti" href="suplementos">Suplementos</a></li>
+                    <li><a  class="txt-related txt-reti" href="accesorios">Accesorios</a></li>
                   </div>
                     
                       
-                  <li><a  class="txt-related" href="#">Contacto</a></li>
+                  <li><a  class="txt-related" href="contacto">Contacto</a></li>
               </ul>
             </nav>
           </div>
@@ -53,5 +53,16 @@
   </div>
 
   
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2JP3L2P57"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L2JP3L2P57');
+  </script>
+
+
 </body>
 </html>
