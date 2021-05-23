@@ -660,3 +660,26 @@ label {
   background-color: black;
   color: white;
 }
+
+.bg-tien {
+  background-color: #6d6d6d;
+  padding: 3em;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+@media only screen and (max-width: 480px) {
+  .bg-tien {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .bg-tien {
+    padding-left: 1em;
+    padding-right: 0em;
+  }
+}
+
+strong {
+  font-family: "CenturySchoolbook BoldItalic";
+}

@@ -499,3 +499,24 @@ label{
     background-color: black;
     color: white;
 }
+
+//pagina tienda
+
+.bg-tien{
+    background-color:  #6d6d6d;
+    padding: 3em;
+    padding-left: 10em;
+    padding-right: 10em;
+    @include respond-to($phone){
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    @include respond-to($tablet-landscape){
+        padding-left: 1em;
+        padding-right: 0em;
+    }
+}
+
+strong{
+    font-family: "CenturySchoolbook BoldItalic";
+}

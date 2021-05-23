@@ -236,28 +236,49 @@ h2 {
 }
 
 .tam-img {
-  height: 419px;
+  height: 428px;
+  width: 394px;
   margin-bottom: 2em;
 }
 @media only screen and (max-width: 480px) {
   .tam-img {
     height: 300px;
+    width: 295px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .tam-img {
+    width: 366px;
+  }
+}
+
+.card {
+  border: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .card-body {
+    padding: 0em;
   }
 }
 
 .col-adj {
   text-align: center;
   flex: 1 0 0%;
+  align-items: center;
 }
 @media only screen and (max-width: 480px) {
   .col-adj {
     margin-bottom: 4em;
+    margin-right: 9em;
+    margin-left: 9.5em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .col-adj {
     margin-bottom: 4em;
-    margin-left: 4em;
+    margin-left: 10em;
+    margin-right: 10em;
   }
 }
 
@@ -561,4 +582,85 @@ h3 {
     margin-left: 6em;
     margin-right: 6em;
   }
+}
+
+.bg-cont {
+  background-image: url(./img/dendrobiun.jpg);
+  background-repeat: no-repeat;
+  height: 70em;
+  padding-top: 8%;
+}
+@media only screen and (max-width: 480px) {
+  .bg-cont {
+    height: 47em;
+  }
+}
+
+.bg-contform {
+  background-color: #fff;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding: 3em;
+}
+@media only screen and (max-width: 480px) {
+  .bg-contform {
+    padding: 1em;
+  }
+}
+
+label {
+  font-family: "CenturySchoolbook Bold";
+  font-size: 1.3em;
+}
+
+.btn-cont {
+  background-color: white;
+  font-family: "CenturySchoolbook Bold";
+  border-color: black;
+  border-width: 3px;
+  border-radius: 40px;
+  font-size: 2.3em;
+  margin-top: 0.8em;
+  width: 6em;
+  margin-left: 40%;
+}
+@media only screen and (max-width: 480px) {
+  .btn-cont {
+    font-size: 1.5em;
+    border-width: 2px;
+    margin-left: 24%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .btn-cont {
+    font-size: 2em;
+  }
+}
+
+.btn-cont:hover {
+  background-color: black;
+  color: white;
+}
+
+.bg-tien {
+  background-color: #6d6d6d;
+  padding: 3em;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+@media only screen and (max-width: 480px) {
+  .bg-tien {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .bg-tien {
+    padding-left: 1em;
+    padding-right: 0em;
+  }
+}
+
+strong {
+  font-family: "CenturySchoolbook BoldItalic";
 }
