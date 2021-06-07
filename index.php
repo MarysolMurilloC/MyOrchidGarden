@@ -36,21 +36,21 @@
           <div class="card col-adj">
             <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/tien1.JPG"; ?>" alt=""> 
             <div class="card-body">
-            <a class="tit-pro" href="#">Orquídeas</a>
+            <a class="tit-pro" href="orquideas">Orquídeas</a>
             </div>
           </div>
 
           <div class="card col-adj">
           <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/jcr_content.png"; ?>" alt="">
             <div class="card-body">
-            <a class="tit-pro" href="#">Suplementos</a>
+            <a class="tit-pro" href="suplementos">Suplementos</a>
             </div>
           </div>
 
           <div class="card col-adj">
           <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/maceta.jpg"; ?>" alt="">
             <div class="card-body">
-            <a class="tit-pro" href="#">Accesorios</a>
+            <a class="tit-pro" href="accesorios">Accesorios</a>
             </div>
           </div>
             

@@ -16,8 +16,8 @@
         <div class="container-fluid ms-2 me-1">
           <a class="navbar-brand" href="#"><img class="logo" src="<?php echo get_template_directory_uri()."/img/mog.png"; ?>" alt="MOG"></a>
   
-          <button class="navbar-toggler btn-ham" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--barrita desplegable dispositivo movil-->
+          <button class="navbar-toggler btn-ham" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" 
+          aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation"><!--barrita desplegable dispositivo movil-->
           <span class="navbar-toggler-icon"></span>
           </button>
 

@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
     <img class="phguar" src="<?php echo get_template_directory_uri()."/img/guaria.jpg"; ?>" alt="orquidea">
     <div class="bg-about">
     <div class="margin-qs">
