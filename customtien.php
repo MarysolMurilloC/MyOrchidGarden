@@ -1,6 +1,8 @@
-<?php get_header(); ?>
+<?php
+/* Template Name: Tienda*/
+ get_header(); ?>
 
-    <div class="bg-tien">
+<div class="bg-tien">
     <?php
         //Loop
         while( have_posts() ) : the_post();
@@ -16,5 +18,4 @@
     <?php endwhile; ?>
     </div>
     
-
 <?php get_footer(); ?>
