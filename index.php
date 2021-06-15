@@ -8,7 +8,7 @@
     <div class="bg-welcome">
     
       <div class="pos-tien">
-        <p class="txt-tien pb-3">Orquídeas de calidad, suplementos para estas y mucho más</p>
+        <p class="txt-tien pb-3"><?php the_field('slogan'); ?></p>
         <a type="button" class="btn btn-tien" href="tienda">Ir a la tienda</a>
   
         <div class="row">
@@ -32,29 +32,36 @@
       <div class="mar-tien">
           <h2>Nuestros Productos</h2>
 
+          <?php
+            //get tienda
+            $args = array(
+                'post_type' => 'page',
+                'posts_per_page' => -1,
+                'post_parent' => $post->ID,
+                'order' => 'ASC',
+                'orderby' => 'menu_order'
+            );
+
+            $query_cat = new WP_Query($args);
+
+            if( $query_cat->have_posts() ) :
+                while( $query_cat->have_posts() ) : $query_cat->the_post();
+        ?>  
+
           <div class="row">
-          <div class="card col-adj">
-            <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/tien1.JPG"; ?>" alt=""> 
-            <div class="card-body">
-            <a class="tit-pro" href="orquideas">Orquídeas</a>
+            <div class="card col-adj">
+              <img class="tam-img" src="<?php the_field('catego_icon'); ?>" alt=""> 
+              <div class="card-body">
+                <a class="tit-pro" href=""><?php the_title(); ?></a>
+              </div>
             </div>
           </div>
 
-          <div class="card col-adj">
-          <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/jcr_content.png"; ?>" alt="">
-            <div class="card-body">
-            <a class="tit-pro" href="suplementos">Suplementos</a>
-            </div>
-          </div>
 
-          <div class="card col-adj">
-          <img class="tam-img" src="<?php echo get_template_directory_uri()."/img/maceta.jpg"; ?>" alt="">
-            <div class="card-body">
-            <a class="tit-pro" href="accesorios">Accesorios</a>
-            </div>
-          </div>
-            
-          </div>
+          <?php endwhile;
+            else :
+                echo "<p> no hay contenido a mostrar</p>";
+            endif; ?>
       </div><!--fin partes tienda-->
   
       <div class="bg-car">
