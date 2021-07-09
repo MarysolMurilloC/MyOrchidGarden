@@ -16,8 +16,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-
-@font-face {
+font-face {
   font-family: "CenturySchoolbook BoldItalic";
   src: url("../fonts/CenturySchoolbookBOLDITALIC.woff") format("woff");
   src: url("../fonts/CenturySchoolbookBOLDITALIC.ttf") format("truetype");
@@ -109,7 +108,7 @@ p {
 
 a {
   font-size: 30px;
-  color: white;
+  color: black;
   font-family: "CenturySchoolbook Italic";
   text-decoration: none;
 }
@@ -117,6 +116,18 @@ a {
 a:hover {
   color: #0c9e38;
 }
+
+.nav-link {
+  font-size: 30px;
+  color: white;
+  font-family: "CenturySchoolbook Italic";
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #0c9e38;
+}
+
 
 .bor-nav {
   border-right-color: white;
@@ -182,7 +193,7 @@ a:hover {
 .txt-tien {
   font-family: "CenturySchoolbook Regular";
   color: white;
-  font-size: 21px;
+  font-size: 2em;
   text-shadow: 2px 1px #000000;
 }
 @media only screen and (max-width: 480px) {
@@ -680,6 +691,33 @@ label {
   }
 }
 
-strong {
+b, strong {
+  font-weight: bolder;
   font-family: "CenturySchoolbook BoldItalic";
+  font-size: 1.5em;
+}
+@media only screen and (max-width: 480px) {
+  b, strong {
+    font-size: 1.2em;
+  }
+}
+
+.wc-block-grid__product-title {
+  font-family: "CenturySchoolbook Regular";
+  color: black;
+}
+
+.color-ptien {
+  color: black;
+  font-family: "Candara LightItalic";
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+  padding: 0.8em;
+  text-align: center;
+  background-color: white;
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+  font-size: 1.5em;
 }

@@ -13,7 +13,7 @@
 
     <header>
       <nav class="navbar navbar-expand-lg  bg-black">
-        <div class="container-fluid ms-2 me-1">
+        <div class="container-fluid ms-2 me-1 ">
           <a class="navbar-brand" href="#"><img class="logo" src="<?php echo get_template_directory_uri()."/img/mog.png"; ?>" alt="MOG"></a>
   
           <button class="navbar-toggler btn-ham" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" 
