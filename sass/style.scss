@@ -91,8 +91,17 @@ a:hover{
         background-color: black;
     }
 }
+
 .navbar-nav{
-    padding-left: 40em;
+    //padding-left: 40em;
+    @include respond-to($phone){
+        padding: 1em;
+        background-color: black;
+    }
+    @include respond-to($tablet-landscape){
+        padding: 1em;
+        background-color: black;
+    }
 }
 
 
@@ -514,7 +523,7 @@ label{
 //pagina tienda
 
 .bg-tien{
-    background-color:  #6d6d6d;
+    background-color:  #f7f7f7;
     padding: 3em;
     padding-left: 10em;
     padding-right: 10em;

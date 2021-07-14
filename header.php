@@ -13,10 +13,16 @@
 
     <header>
       <nav class="navbar navbar-expand-lg  bg-black">
-        <div class="container-fluid ms-2 me-1 ">
-          <a class="navbar-brand" href="#"><img class="logo" src="<?php echo get_template_directory_uri()."/img/mog.png"; ?>" alt="MOG"></a>
-  
-          <button class="navbar-toggler btn-ham" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" 
+        <div class="container-fluid row ms-2 me-1 ">
+
+        <div class="col">
+        <a class="navbar-brand" href="#"><img class="logo" src="<?php echo get_template_directory_uri()."/img/mog.png"; ?>" alt="MOG"></a>
+        </div>
+
+
+        <div class="col-lg-5 col-md-3">
+
+        <button class="navbar-toggler btn-ham" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" 
           aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation"><!--barrita desplegable dispositivo movil-->
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,9 +30,10 @@
 
           <?php
           wp_nav_menu( array(
+            'menu'           => 'primary',
             'theme_location'    => 'primary',
-            'depth'             => 1,
-            'container'         => 'div',
+            'depth'             => 10,
+            'container'         => '',
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'bs-example-navbar-collapse-1',
             'menu_class'        => 'navbar-nav mr-auto',
@@ -35,6 +42,13 @@
           ));
           ?>
 
+
+        </div>
+
+
+          
+  
+          
   
         </div>
       </nav>

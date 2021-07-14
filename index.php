@@ -8,7 +8,7 @@
     
       <div class="pos-tien">
         <p class="txt-tien pb-3">Orquídeas de calidad, suplementos para estas y mucho más</p>
-        <button type="button" class="btn btn-tien">Ir a la tienda</button>
+        <a type="button" class="btn btn-tien" href="tienda">Ir a la tienda</a>
 
         <div class="row">
           <div class="col-lg-10 col-md-4 col-sm-5"></div>

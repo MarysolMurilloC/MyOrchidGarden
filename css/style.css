@@ -127,8 +127,17 @@ a:hover {
   }
 }
 
-.navbar-nav {
-  padding-left: 40em;
+@media only screen and (max-width: 480px) {
+  .navbar-nav {
+    padding: 1em;
+    background-color: black;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .navbar-nav {
+    padding: 1em;
+    background-color: black;
+  }
 }
 
 .pos-tien {
@@ -654,7 +663,7 @@ label {
 }
 
 .bg-tien {
-  background-color: #6d6d6d;
+  background-color: #f7f7f7;
   padding: 3em;
   padding-left: 10em;
   padding-right: 10em;

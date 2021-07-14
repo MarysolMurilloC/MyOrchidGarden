@@ -41,4 +41,7 @@ header( 'X-Content-Type-Options: nosniff' );
     //support featured image
     add_theme_support('post-thumbnails'); 
 
+ 
+
+
 ?> 
