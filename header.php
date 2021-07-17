@@ -20,7 +20,7 @@
         </div>
 
 
-        <div class="col-lg-5 col-md-3">
+        <div class="col-lg-8 col-md-3">
 
         <button class="navbar-toggler btn-ham" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" 
           aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation"><!--barrita desplegable dispositivo movil-->
@@ -30,7 +30,7 @@
 
           <?php
           wp_nav_menu( array(
-            'menu'           => 'primary',
+            'menu'              => 'primary',
             'theme_location'    => 'primary',
             'depth'             => 10,
             'container'         => '',
@@ -46,9 +46,6 @@
         </div>
 
 
-          
-  
-          
   
         </div>
       </nav>
