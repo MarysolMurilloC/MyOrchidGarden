@@ -13,14 +13,15 @@
 
     <header>
       <nav class="navbar navbar-expand-lg  bg-black">
+
         <div class="container-fluid row ms-2 me-1 ">
 
-        <div class="col">
+        <div class="col-lg-4">
         <a class="navbar-brand" href="#"><img class="logo" src="<?php echo get_template_directory_uri()."/img/mog.png"; ?>" alt="MOG"></a>
         </div>
 
 
-        <div class="col-lg-8 col-md-3">
+        <div class="col-lg-9 col-md-3">
 
         <button class="navbar-toggler btn-ham" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" 
           aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation"><!--barrita desplegable dispositivo movil-->
@@ -30,7 +31,6 @@
 
           <?php
           wp_nav_menu( array(
-            'menu'              => 'primary',
             'theme_location'    => 'primary',
             'depth'             => 10,
             'container'         => '',
@@ -41,6 +41,8 @@
             'walker'            => new WP_Bootstrap_Navwalker()
           ));
           ?>
+
+          <?php echo do_shortcode( '[ivory-search id="307" title="Default Search Form"]' ) ?> 
 
 
         </div>

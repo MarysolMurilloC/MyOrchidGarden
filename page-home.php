@@ -82,7 +82,7 @@
               <div class="carousel-item active car-propo">
                 <img src="<?php echo get_template_directory_uri()."/img/enciclya.jpg"; ?>" class="d-block w-100 phCar" alt="...">
                 <div class="carousel-caption d-md-block bg-det">
-                  <p class="txt-det">Product Name: Enciclya Fragans</p>
+                  <p class="txt-det">Product Name: Encyclia Fragans</p>
                   <p class="txt-det">Category: Plant</p>
                   <p class="txt-det">Price: ₡5000</p>
                 </div>
