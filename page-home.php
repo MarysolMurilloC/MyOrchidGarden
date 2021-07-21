@@ -32,7 +32,7 @@
 
 
       <div class="mar-tien">
-          <h2>Nuestros Productos</h2>
+          <h2>Our Products</h2>
 
 
           <div class="row">
@@ -68,7 +68,7 @@
 
       <div class="bg-car">
         <div class=" mar-car">
-          <h2 class="txt-h3">Productos Destacados</h2>
+          <h2 class="txt-h3">Featured Products</h2>
   
   
           <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
@@ -82,27 +82,27 @@
               <div class="carousel-item active car-propo">
                 <img src="<?php echo get_template_directory_uri()."/img/enciclya.jpg"; ?>" class="d-block w-100 phCar" alt="...">
                 <div class="carousel-caption d-md-block bg-det">
-                  <p class="txt-det">Nombre producto: Enciclya Fragans</p>
-                  <p class="txt-det">Tipo producto: Planta</p>
-                  <p class="txt-det">Precio: ₡5000</p>
+                  <p class="txt-det">Product Name: Enciclya Fragans</p>
+                  <p class="txt-det">Category: Plant</p>
+                  <p class="txt-det">Price: ₡5000</p>
                 </div>
               </div>
   
               <div class="carousel-item car-propo">
                 <img src="<?php echo get_template_directory_uri()."/img/guaria.jpg"; ?>" class="d-block w-100 phCar" alt="...">
                 <div class="carousel-caption d-md-block bg-det">
-                  <p class="txt-det">Nombre producto: Guaria</p>
-                  <p class="txt-det">Tipo producto: Planta</p>
-                  <p class="txt-det">Precio: ₡6000</p>
+                  <p class="txt-det">Product Name: Guaria</p>
+                  <p class="txt-det">Category: Plant</p>
+                  <p class="txt-det">Price: ₡6000</p>
                 </div>
               </div>
   
               <div class="carousel-item car-propo">
                 <img src="<?php echo get_template_directory_uri()."/img/dendrobiun.jpg"; ?> " class="d-block w-100 phCar" alt="...">
                 <div class="carousel-caption d-md-block bg-det">
-                  <p class="txt-det">Nombre producto: Dendrobiun</p>
-                  <p class="txt-det">Tipo producto: Planta</p>
-                  <p class="txt-det">Precio: ₡4000</p>
+                  <p class="txt-det">Product Name: Dendrobiun</p>
+                  <p class="txt-det">Category: Plant</p>
+                  <p class="txt-det">Price: ₡4000</p>
                 </div>
               </div>
             </div> <!--fptos-->
